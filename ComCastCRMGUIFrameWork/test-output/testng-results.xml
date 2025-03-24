@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-13T10:46:50Z" name="Suite" finished-at="2025-03-13T10:47:04Z" duration-ms="13622">
+    <groups>
+      <group name="smokeTest">
+        <method signature="CreateOrgTest.createOrg()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" name="createOrg" class="Com.ComCast.CRM.OrgnizationTest.CreateOrgTest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2025-03-13T10:46:50Z" name="Test" finished-at="2025-03-13T10:47:04Z" duration-ms="13622">
+      <class name="Com.ComCast.CRM.OrgnizationTest.CreateOrgTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:46:50Z" name="configBS" finished-at="2025-03-13T10:46:50Z" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:46:50Z" name="configBC" finished-at="2025-03-13T10:46:53Z" duration-ms="2803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:46:53Z" name="configBM" finished-at="2025-03-13T10:46:55Z" duration-ms="2174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrg()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:46:55Z" name="createOrg" finished-at="2025-03-13T10:47:02Z" duration-ms="7378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:47:02Z" name="configAM" finished-at="2025-03-13T10:47:03Z" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:47:03Z" name="configAC" finished-at="2025-03-13T10:47:04Z" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:Com.ComCast.CRM.OrgnizationTest.CreateOrgTest@d41f816]" started-at="2025-03-13T10:47:04Z" name="configAS" finished-at="2025-03-13T10:47:04Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- Com.ComCast.CRM.OrgnizationTest.CreateOrgTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
