@@ -19,25 +19,25 @@ public class CreateOrgTest extends BaseClass {
 	
 	@Test (groups="smokeTest")
 	public void createOrg() throws Exception {
-        UtilityClassObject.getTest().log(Status.INFO, "read data from Excel");
+         //UtilityClassObject.getTest().log(Status.INFO, "read data from Excel");
 		// read testscript data from Excel file
 		String orgName = elib.getDatafromExcel("org3", 10, 2) + jlib.getRandomNumber();
 
 		// navigate to organization module
-		 UtilityClassObject.getTest().log(Status.INFO, "navigate to Org Page");
+		 //UtilityClassObject.getTest().log(Status.INFO, "navigate to Org Page");
 		HomePage hp = new HomePage(driver);
 		hp.getOrganisationLink().click();
 
 		// click on create organization button 
-		 UtilityClassObject.getTest().log(Status.INFO, "navigate to create Org Page");
+		//UtilityClassObject.getTest().log(Status.INFO, "navigate to create Org Page");
 		OrganizationsPage op = new OrganizationsPage(driver);
 		op.getCreateOrganisationBtn().click();
 
 		// enter all details and create a new organization
-		 UtilityClassObject.getTest().log(Status.INFO, "Create a new Org");
+		//UtilityClassObject.getTest().log(Status.INFO, "Create a new Org");
 		CreateNewOrganizationPage cnop = new CreateNewOrganizationPage(driver);
 		cnop.getOrgNameEdt().sendKeys(orgName);
-		 UtilityClassObject.getTest().log(Status.INFO, orgName + "====> Craete a new Org");
+		//UtilityClassObject.getTest().log(Status.INFO, orgName + "====> Craete a new Org");
 		cnop.getSaveBtn().click();
 
 		// Verify Header Message Expected Result

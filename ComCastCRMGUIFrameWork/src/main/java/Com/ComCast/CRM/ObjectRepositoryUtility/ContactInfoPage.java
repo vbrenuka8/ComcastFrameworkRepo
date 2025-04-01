@@ -15,7 +15,7 @@ public class ContactInfoPage {
   private WebElement ContactHeaderInfo;
   @FindBy(xpath="//span[@id='dtlview_Last Name']")
   private WebElement LastNameTextAfterSave;
-public WebDriver getDriver() {
+   public WebDriver getDriver() {
 	return driver;
 }
 public WebElement getContactHeaderInfo() {

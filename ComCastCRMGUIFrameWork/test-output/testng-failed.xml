@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.ComCast.CRM.OrgnizationTest.CreateOrgTest">
+      <class name="Com.ComCast.CRM.ProductTest.CreateProductTest">
         <methods>
           <include name="configAS"/>
           <include name="configAC"/>
+          <include name="createProduct"/>
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configBM"/>
           <include name="configAM"/>
-          <include name="createOrg"/>
         </methods>
-      </class> <!-- Com.ComCast.CRM.OrgnizationTest.CreateOrgTest -->
+      </class> <!-- Com.ComCast.CRM.ProductTest.CreateProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -34,7 +34,7 @@ private WebElement OrganisationLink;
 private WebElement ContactLink;
 @FindBy(linkText = "index.php?module=Contacts&action=index") 
 private WebElement OpportunitiesLink;
-@FindBy(linkText = "index.php?module=Products&action=index")
+@FindBy(xpath = "//a[@href='index.php?module=Products&action=index']")
 private WebElement ProductsLink;
 @FindBy(linkText = "index.php?module=Documents&action=index")
 private WebElement DocumentsLink;
@@ -54,6 +54,8 @@ private WebElement BackToHomePage;
 private WebElement LogoutLink;
 @FindBy(name="Campaigns")
 private WebElement CampaignsLink;
+
+
 
 public WebElement getCampaignsLink() {
 	return CampaignsLink;

@@ -43,16 +43,17 @@ public class BaseClass {
 
 	}
 
-	// @Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(groups = { "smokeTest", "regressionTest" })
 	// public void configBC(String browser) throws Exception { //cross browser
 	// parallel execution
-	public void configBC() throws Exception {
+	   public void configBC() throws Exception {
 		System.out.println("==Launch the Browser==");
 		String URL = flib.getDataFromPropertiesFile("url");
-		// String Browser=browser;
+		//String URL=System.getProperty("url");
+		//String Browser=browser;
 		String Browser = flib.getDataFromPropertiesFile("browser");
-
+         //String Browser=System.getProperty("browser");//Cmd line to pass MAVEN Parameter
 		if (Browser.equals("Chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equals("Firefox")) {
@@ -65,6 +66,7 @@ public class BaseClass {
 		sdriver = driver;
 		driver.get(URL);
 		UtilityClassObject.setdriver(driver);
+		wlib.waitForPageToLoad(driver);
 
 	}
 
@@ -73,6 +75,8 @@ public class BaseClass {
 		System.out.println("==Login==");
 		String USN = flib.getDataFromPropertiesFile("username");
 		String PSW = flib.getDataFromPropertiesFile("password");
+		//String USN=System.getProperty("username");
+		//String PSW=System.getProperty("password");		
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(USN, PSW);
 	}

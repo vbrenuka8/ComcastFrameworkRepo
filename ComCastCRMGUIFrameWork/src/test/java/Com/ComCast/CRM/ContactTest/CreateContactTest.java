@@ -7,7 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.Status;
+
 import Com.ComCast.CRM.Generic.BaseUtility.BaseClass;
+import Com.ComCast.CRM.Generic.WebDriverUtility.UtilityClassObject;
 import Com.ComCast.CRM.ObjectRepositoryUtility.ContactInfoPage;
 import Com.ComCast.CRM.ObjectRepositoryUtility.CreateContactPage;
 import Com.ComCast.CRM.ObjectRepositoryUtility.CreateNewOrganizationPage;
@@ -23,14 +26,17 @@ public class CreateContactTest extends BaseClass {
 
 	@Test(groups = "smokeTest")
 	public void createContact() throws Throwable {
+		 //UtilityClassObject.getTest().log(Status.INFO, "read data from Excel");
 		/* read testscript data from Excel file*/
 		String lastname = elib.getDatafromExcel("contact", 1, 2) + jlib.getRandomNumber();
 
 		// navigate to organization module
+		//UtilityClassObject.getTest().log(Status.INFO, "navigate to Contact Page");
 		HomePage hp = new HomePage(driver);
 		hp.getContactLink().click();
 
 		// navigate to create contact page
+		//UtilityClassObject.getTest().log(Status.INFO, "navigate to create new  contact");
 		CreateContactPage ccp = new CreateContactPage(driver);
 		ccp.getCreateNewContactBtn().click();
 		ccp.getLastNameTextField().sendKeys(lastname);
